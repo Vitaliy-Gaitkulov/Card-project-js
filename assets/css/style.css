@@ -42,20 +42,19 @@
 .cardWrapper {
   display: flex;
   align-items: stretch;
-  border: 5px solid;
   margin: 2rem 1rem;
 }
 
 .cardContainer {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  text-align: center;
+  width: 260px;
+  text-align: left;
 }
 
 .imageWrapper {
   width: inherit;
-  height: 320px;
+  height: 260px;
   position: relative;
   overflow: hidden;
 }
@@ -76,13 +75,33 @@
 }
 
 .cardName {
-  margin: 10px 0;
+  margin: 20px 0;
+  font-size: 22px;
 }
 
 .cardDescription {
-  font-weight: bold;
+  color: rgb(109, 109, 109);
+  margin: 10px 0;
+  font-size: 14px;
+  line-height:1.5rem;
 }
 
 .ulLinks{
-  
+  display: flex;
+}
+
+.ulLinks a{
+  color:#c6cacc;
+  padding: 10px;
+  margin-right: 5px;
+  font-size:24px;
+  background: white;
+  text-decoration: none;
+  border-radius:5px;
+  border: 1px solid #e8ecee;
+}
+
+.ulLinks a:hover{
+  color:#ebecec;
+  background: #e84545;
 }
