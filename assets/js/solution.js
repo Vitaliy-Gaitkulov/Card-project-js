@@ -4,7 +4,7 @@
 const supportedSocialNetworks = new Map()
   .set("www.facebook.com", "fa fa-facebook")
   .set("twitter.com", "fa fa-twitter")
-  .set("www.instagramm.com", "fa fa-instagramm");
+  .set("www.instagram.com", "fa fa-instagram");
 // key - hostname
 
 const lorem =
@@ -59,7 +59,6 @@ function createUlElement(contacts) {
     const cssClasses = supportedSocialNetworks.get(hostname);
     const a = document.createElement("a");
     a.setAttribute("href", contact);
-    console.log(supportedSocialNetworks);
     if(cssClasses === undefined){
       a.setAttribute("class", 'fa fa-google');
     }else{
